@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="head_bar">
+        <h1 class="head_bar__title">Bacaanku</h1>
+        <div class="head_bar__right">
+            <section class="search_section">
+                <form id="searchBook">
+                    <input id="searchBookTitle" type="text" placeholder="Cari Judul Buku...">
+                    <button id="searchSubmit" type="submit">Cari</button>
+                </form>
+            </section>
+        </div>
+    </header>
+    <main class="main">
+        <section class="padding-x padding-y section-welcoming-user">
+            <h2>Hallo, <span id="user-name" class="section-welcoming-span-h">Your Name</span></h2>
+            <div id="add-name-icon" class="add-name-icon">✏️</div>
+        </section>
+
+        <section class="input_section">
+            <h2>Masukkan Buku Baru</h2>
+            <form id="inputBook">
+                <div class="input">
+                    <label for="inputBookTitle">Judul</label>
+                    <input id="inputBookTitle" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input id="inputBookAuthor" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookYear">Tahun Terbit Buku</label>
+                    <input id="inputBookYear" type="number" required>
+                </div>
+                <div class="input_inline">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                    <input id="inputBookIsComplete" type="checkbox">
+                </div>
+                <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+            </form>
+        </section>
+
+        <section class="book_shelf">
+            <h2>Belum selesai dibaca</h2>
+            <div id="incompleteBookshelfList" class="book_list">
+                <!-- This section will be populated dynamically -->
+            </div>
+        </section>
+
+        <section class="book_shelf">
+            <h2>Selesai dibaca</h2>
+            <div id="completeBookshelfList" class="book_list">
+                <!-- This section will be populated dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/fahruphoto"><img src="./assets/img/instagram_logo.png" alt="Instagram"></a>
+            <a href="https://github.com/fahrurojak"><img src="./assets/img/github_logo.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/fahrurojak"><img src="./assets/img/linkedin_logo.png" alt="LinkedIn"></a>
+        </div>
+        <p>Bacaanku, adalah sebuah Bookshelf Apps untuk menyimpan bacaan buku.</p>
+        <small>Copyright &copy; 2024 - Fahru Rojak</small>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
