@@ -1,6 +1,8 @@
+/* Ensure the background image covers the entire screen and is centered */
 body {
     background-image: url("/assets/img/benner.png");
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     padding: 0;
     margin: 0;
@@ -28,17 +30,12 @@ input, button {
     box-sizing: border-box;
 }
 
-.head_bar_title {
+.head_bar__title {
     margin: 0;
     font-size: 14px;
 }
 
-.head_bar__left {
-    display: flex;
-    align-items: center;
-}
-
-.head_bar__right {
+.head_bar__left, .head_bar__right {
     display: flex;
     align-items: center;
 }
@@ -48,8 +45,7 @@ input, button {
     align-items: center;
 }
 
-.head_bar .search_container input[type="text"],
-.head_bar .search_container button {
+.head_bar .search_container input[type="text"], .head_bar .search_container button {
     padding: 8px;
     border-radius: 5px;
     margin-right: 8px;
@@ -243,8 +239,7 @@ footer {
     margin: 10px 0;
 }
 
-.book_shelf > .book_list > .book_item > h3,
-.book_shelf > .book_list > .book_item > p {
+.book_shelf > .book_list > .book_item > h3, .book_shelf > .book_list > .book_item > p {
     margin: 8px 0;
 }
 
@@ -260,10 +255,12 @@ footer {
     background-color: darkgreen;
     color: white;
 }
+
 .book_shelf > .book_list > .book_item > .action > .blue {
     background-color: dodgerblue;
     color: white;
 }
+
 .book_shelf > .book_list > .book_item > .action > .red {
     background-color: darkred;
     color: white;
@@ -277,7 +274,7 @@ footer {
         text-align: center;
     }
 
-    .head_bar_title {
+    .head_bar__title {
         margin-bottom: 8px;
     }
 
