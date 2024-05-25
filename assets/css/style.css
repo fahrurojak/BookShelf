@@ -1,8 +1,8 @@
-/* Ensure the background image covers the entire screen and is centered */
 body {
     background-image: url("/assets/img/benner.png");
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* This ensures the background covers the entire area */
+    background-position: center; /* This centers the background image */
+    background-repeat: no-repeat; /* This prevents the background image from repeating */
     background-attachment: fixed;
     padding: 0;
     margin: 0;
@@ -266,6 +266,12 @@ footer {
     color: white;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: contain; /* This adjusts the size for small screens */
+        background-position: center top; /* Positions the background at the top center */
+    }
+}
 /* For small screens such as smartphones */
 @media only screen and (max-width: 600px) {
     .head_bar {
