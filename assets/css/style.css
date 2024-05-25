@@ -284,25 +284,19 @@ footer {
   color: white;
 }
 
+/* Untuk layar kecil seperti smartphone */
 @media only screen and (max-width: 600px) {
-    .head_bar {
-      padding: 8px;
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .head_bar_title {
-      margin-bottom: 8px;
-    }
-  
-    .head_bar .search_container {
-      margin-top: 8px;
-    }
-  
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
+  .head_bar {
+    padding: 8px;
+    flex-direction: column;
+    text-align: center;
   }
-  
+
+  .head_bar_title {
+    margin-bottom: 8px;
+  }
+
+  .head_bar .search_container {
+    margin-top: 8px;
+  }
+}
