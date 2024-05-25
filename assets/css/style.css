@@ -16,18 +16,15 @@ body, input, button {
 input, button {
     font-size: 16px;
 }
+
 .head_bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Nilai z-index yang tinggi agar header tetap di atas */
     padding: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
     color: #212020;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -86,13 +83,13 @@ input, button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .section-welcoming-user {
-    margin-top: 60px; /* Sesuaikan dengan tinggi head_bar */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    padding: 20px 0; /* Atur padding sesuai kebutuhan */
+    margin-top: 50px; /* Adjust as needed */
 }
 
 .section-welcoming-user h2 {
@@ -106,11 +103,13 @@ input, button {
 .add-name-icon {
     margin-left: 10px; /* Adjust as needed */
 }
+
 .main {
-    max-width: 800px;
-    width: 100%;
+    max-width: 1000px; /* Adjust max-width for larger screens */
+    width: 90%; /* Use percentage for responsiveness */
     margin: 0 auto;
     padding: 16px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .footer a {
@@ -124,6 +123,7 @@ footer {
     text-align: center;
     font-weight: bold;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .social-icons {
@@ -269,7 +269,7 @@ footer {
     color: white;
 }
 
-/* Untuk layar kecil seperti smartphone */
+/* For small screens such as smartphones */
 @media only screen and (max-width: 600px) {
     .head_bar {
         padding: 8px;
@@ -284,14 +284,40 @@ footer {
     .head_bar .search_container {
         margin-top: 8px;
     }
+
+    .main {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .input_section, .book_shelf {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .input_section > form, .book_shelf > .book_list {
+        width: 100%;
+    }
 }
 
-/* Untuk layar sedang (misalnya, tablet) */
+/* For medium screens such as tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Tidak ada penyesuaian khusus yang diperlukan pada ukuran tablet */
+    .main {
+        width: 90%;
+    }
+
+    .input_section, .book_shelf {
+        width: 90%;
+    }
 }
 
-/* Untuk layar besar (misalnya, desktop) */
+/* For large screens such as desktops */
 @media only screen and (min-width: 1025px) {
-    /* Tidak ada penyesuaian khusus yang diperlukan pada ukuran desktop */
+    .main {
+        width: 80%;
+    }
+
+    .input_section, .book_shelf {
+        width: 80%;
+    }
 }
