@@ -1,5 +1,5 @@
 body {
-    background-image: url("./assets/img/benner.png");
+    background-image: url("/assets/img/benner.png");
     background-size: cover;
     background-attachment: fixed;
     padding: 0;
