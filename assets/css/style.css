@@ -1,326 +1,303 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-image: url("/assets/img/benner.png");
-    background-size: cover; /* This ensures the background covers the entire area */
-    background-position: center; /* This centers the background image */
-    background-repeat: no-repeat; /* This prevents the background image from repeating */
-    background-attachment: fixed;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.299);
+  background-image: url("/assets/img/benner.png");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.299);
 }
 
-body, input, button {
-    font-family: 'Open Sans', sans-serif;
+body,
+input,
+button {
+  font-family: 'Open Sans', sans-serif;
 }
 
-input, button {
-    font-size: 16px;
+input,
+button {
+  font-size: 16px;
 }
 
 .head_bar {
-    padding: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    color: #212020;
-    width: 100%;
-    box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #212020;
+  box-sizing: border-box;
 }
 
-.head_bar__title {
-    margin: 0;
-    font-size: 14px;
+.head_bar_title {
+  margin: 0;
+  font-size: 14px;
 }
 
-.head_bar__left, .head_bar__right {
-    display: flex;
-    align-items: center;
+.head_bar__left {
+  display: flex;
+  align-items: center;
+}
+
+.head_bar__right {
+  display: flex;
+  align-items: center;
 }
 
 .head_bar .search_container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.head_bar .search_container input[type="text"], .head_bar .search_container button {
-    padding: 8px;
-    border-radius: 5px;
-    margin-right: 8px;
+.head_bar .search_container input[type="text"],
+.head_bar .search_container button {
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 8px;
 }
 
 .head_bar .search_container button {
-    background-color: cornflowerblue;
-    color: white;
-    border: 0;
-    cursor: pointer;
+  background-color: cornflowerblue;
+  color: white;
+  border: 0;
+  cursor: pointer;
 }
 
 .head_bar__right .search_section {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .search_section > form {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .search_section > form > input {
-    padding: 5px;
-    border-radius: 5px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .search_section > form > button {
-    background-color: cornflowerblue;
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: cornflowerblue;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .section-welcoming-user {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-top: 50px; /* Adjust as needed */
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px 0;
 }
 
 .section-welcoming-user h2 {
-    margin-bottom: 20px; /* Adjust as needed */
+  margin-bottom: 20px;
 }
 
 .section-welcoming-span-h {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .add-name-icon {
-    margin-left: 10px; /* Adjust as needed */
+  margin-left: 10px;
 }
 
 .main {
-    max-width: 1000px; /* Adjust max-width for larger screens */
-    width: 90%; /* Use percentage for responsiveness */
-    margin: 0 auto;
-    padding: 16px;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
 }
 
 .footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 footer {
-    padding: 20px 16px;
-    color: #212020;
-    background-color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-    width: 100%;
-    box-sizing: border-box;
+  padding: 20px 16px;
+  color: #212020;
+  background-color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
 }
 
 .social-icons {
-    text-align: center;
-    margin-top: 10px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .social-icons a {
-    display: inline-block;
-    margin: 0 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .social-icons img {
-    width: 25px;
-    height: auto;
+  width: 25px;
+  height: auto;
 }
 
 .input_section {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    border-radius: 10px;
-    background: linear-gradient(to bottom, #ccc, #fff);
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ccc, #fff);
 }
 
 .input_section > h2 {
-    text-align: center;
-    color: #212020;
+  text-align: center;
+  color: #212020;
 }
 
 .input_section > form > .input {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
 .input_section > form > button {
-    background-color: cornflowerblue;
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    display: block;
-    width: 100%;
-    padding: 8px;
-    cursor: pointer;
+  background-color: cornflowerblue;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .input_section > form > button > span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .input_section > form > .input > input {
-    display: block;
-    width: calc(100% - 16px);
-    padding: 8px;
-    border-radius: 5px;
-    margin-right: 8px;
+  display: block;
+  width: calc(100% - 16px);
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 8px;
 }
 
 .input_section > form > .input > label {
-    color: #212020;
-    font-weight: bold;
+  color: #212020;
+  font-weight: bold;
 }
 
 .input_section > form > .input_inline {
-    margin: 12px 0;
-    display: flex;
-    align-items: center;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
 }
 
 .input_section > form > .input_inline > label {
-    color: #212020;
-    font-weight: bold;
-    margin-right: 10px;
+  color: #212020;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .search_section > h2 {
-    color: #212020;
+  color: #212020;
 }
 
 .search_section > form {
-    padding: 16px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr 0.5fr;
-    grid-gap: 10px;
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
 }
 
 .search_section > form > button {
-    background-color: #212020;
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #212020;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .book_shelf {
-    max-width: 400px;
-    margin: 16px auto 0;
-    padding: 12px;
-    border-radius: 10px;
-    background: linear-gradient(to bottom, #ccc, #fff);
+  max-width: 400px;
+  margin: 16px auto 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ccc, #fff);
 }
 
 .book_shelf > h2 {
-    color: #212020;
+  color: #212020;
 }
 
 .book_shelf > .book_list {
-    padding: 16px;
+  padding: 16px;
 }
 
 .book_shelf > .book_list > .book_item {
-    padding: 8px 16px 16px 16px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px 0;
+  padding: 8px 16px 16px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
-.book_shelf > .book_list > .book_item > h3, .book_shelf > .book_list > .book_item > p {
-    margin: 8px 0;
+.book_shelf > .book_list > .book_item > h3,
+.book_shelf > .book_list > .book_item > p {
+  margin: 8px 0;
 }
 
 .book_shelf > .book_list > .book_item > .action > button {
-    border: 0;
-    padding: 5px;
-    margin: 0 5px 0 0;
-    border-radius: 5px;
-    cursor: pointer;
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .book_shelf > .book_list > .book_item > .action > .green {
-    background-color: darkgreen;
-    color: white;
+  background-color: darkgreen;
+  color: white;
 }
 
 .book_shelf > .book_list > .book_item > .action > .blue {
-    background-color: dodgerblue;
-    color: white;
+  background-color: dodgerblue;
+  color: white;
 }
 
 .book_shelf > .book_list > .book_item > .action > .red {
-    background-color: darkred;
-    color: white;
+  background-color: darkred;
+  color: white;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-size: contain; /* This adjusts the size for small screens */
-        background-position: center top; /* Positions the background at the top center */
-    }
-}
-/* For small screens such as smartphones */
+/* Untuk layar kecil seperti smartphone */
 @media only screen and (max-width: 600px) {
     .head_bar {
-        padding: 8px;
-        flex-direction: column;
-        text-align: center;
+      padding: 8px;
+      flex-direction: column;
+      text-align: center;
     }
-
-    .head_bar__title {
-        margin-bottom: 8px;
+  
+    .head_bar_title {
+      margin-bottom: 8px;
     }
-
+  
     .head_bar .search_container {
-        margin-top: 8px;
+      margin-top: 8px;
     }
-
-    .main {
-        width: 100%;
-        padding: 8px;
-    }
-
-    .input_section, .book_shelf {
-        width: 100%;
-        padding: 8px;
-    }
-
-    .input_section > form, .book_shelf > .book_list {
-        width: 100%;
-    }
-}
-
-/* For medium screens such as tablets */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .main {
-        width: 90%;
-    }
-
-    .input_section, .book_shelf {
-        width: 90%;
-    }
-}
-
-/* For large screens such as desktops */
-@media only screen and (min-width: 1025px) {
-    .main {
-        width: 80%;
-    }
-
-    .input_section, .book_shelf {
-        width: 80%;
-    }
-}
+  }
+  
